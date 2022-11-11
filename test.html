@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+
+<form name="quiz" id="quiz">
+    <fieldset>
+        <legend>Who did invent NW.js?</legend>
+
+        <input type="radio" id="Bill Gates" name="human" value="1">
+        <label for="Bill Gates">Bill Gates</label><br/>
+
+        <input type="radio" id="Roger Wang" name="human" value="2">
+        <label for="Roger Wang">Roger Wang</label><br/>
+
+        <input type="radio" id="Tim Berners-Lee" name="human" value="3">
+        <label for="Tim Berners-Lee">Tim Berners-Lee</label>
+    </fieldset>
+    <br>
+    <input type="submit" onclick="checking()" value="Answer">
+</form>
+<script>
+    function checking() {
+        var answers = quiz.human.value;
+
+        if (answers == "2") {
+            alert("Exactly!")
+        } else {
+            alert("Wrong answer!")
+        }
+    }
+</script>
+
+</body>
+</html>
