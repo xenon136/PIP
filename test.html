@@ -7,27 +7,27 @@
 </head>
 <body>
 
-<form name="quiz" id="quiz">
+<form name="test" id="test">
     <fieldset>
-        <legend>Who did invent NW.js?</legend>
+        <legend>В каком году было крещение Руси?</legend>
 
-        <input type="radio" id="Bill Gates" name="human" value="1">
-        <label for="Bill Gates">Bill Gates</label><br/>
+        <input type="radio" id="first" name="year" value="1">
+        <label for="Bill Gates">988</label><br/>
 
-        <input type="radio" id="Roger Wang" name="human" value="2">
-        <label for="Roger Wang">Roger Wang</label><br/>
+        <input type="radio" id="second" name="year" value="2">
+        <label for="Roger Wang">998</label><br/>
 
-        <input type="radio" id="Tim Berners-Lee" name="human" value="3">
-        <label for="Tim Berners-Lee">Tim Berners-Lee</label>
+        <input type="radio" id="third" name="year" value="3">
+        <label for="Tim Berners-Lee">1988</label>
     </fieldset>
     <br>
-    <input type="submit" onclick="checking()" value="Answer">
+    <input type="submit" onclick="checking()" value="Ответ">
 </form>
 <script>
     function checking() {
-        var answers = quiz.human.value;
+        var answers = quiz.year.value;
 
-        if (answers == "2") {
+        if (answers == "1") {
             alert("Exactly!")
         } else {
             alert("Wrong answer!")
