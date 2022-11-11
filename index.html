@@ -58,6 +58,14 @@
     wt.classList.add('card-text')
     wn.classList.add('card-text')
     $('#taskBody').append(card)
+    let taskList = []
+        $('#save').click(function () {
+            let task = {}
+            task.what = $('#what').val()
+            task.when = $('#when').val()
+            taskList.push(task)
+            addTask(task)
+        }) 
 }
     </script>
 </body>
