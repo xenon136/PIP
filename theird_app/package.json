@@ -1,0 +1,10 @@
+{
+  "name": "Calc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "window":{
+	  "title": "Простой калькулятор",
+	  "width": 300,
+	  "height": 400
+  }  
